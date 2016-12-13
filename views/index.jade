@@ -1,4 +1,33 @@
 extends layout
 
 block content
-  h1 hose
+  nav.navbar.navbar-fixed-top
+    div.container
+      div.row
+        div.col-xs-10  
+          h1 Companion Log
+        div.col-xs-1
+          a.redcross
+            i.fa.fa-plus.fa-2x
+        div.col-xs-1 
+          a.settings
+            i.fa.fa-cog.fa-2x
+         
+    div.tabs
+      div.row
+        div.col-xs-2
+          a.links.selected Home
+        div.col-xs-2
+          a.links Calendar
+        div.col-xs-2
+          a.links Alarms
+        div.col-xs-2
+          a.links Maps
+        div.col-xs-2
+          a.links Training
+        div.col-xs-2
+          a.links other
+  div.newpet
+    div.container
+      i.fa.fa-plus-square
+      span  New Pet
