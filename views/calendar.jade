@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  nav.navbar.navbar-fixed-top
+    div.container
+      div.row
+        div.col-xs-10  
+          h1 Companion Log
+        div.col-xs-1
+          a.redcross
+            i.fa.fa-plus.fa-2x
+        div.col-xs-1 
+          a.settings
+            i.fa.fa-cog.fa-2x       
+    div.tabs
+      div.row
+        div.col-xs-3
+          a.links(href="/") Home
+        div.col-xs-3
+          a.links.selected(href="/calendar") Calendar
+        div.col-xs-3
+          a.links Alarms
+        div.col-xs-3
+          a.links Training
+  div.container
+    div.calendar
+    
+    
+      

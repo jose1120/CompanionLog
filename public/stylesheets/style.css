@@ -61,7 +61,7 @@ h1
   margin: 0px 15px;
 }
 
-.col-xs-2
+.col-xs-3
 {
   padding: 0px !important;
 }
@@ -96,4 +96,19 @@ h1
   border: 1px groove black;
   padding:25px ;
   font-size: 25px;
+}
+
+.petinfo
+{
+
+}
+
+.month
+{
+  text-align: center;
+}
+
+tr
+{
+  border:1px solid black;
 }

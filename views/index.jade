@@ -11,23 +11,30 @@ block content
             i.fa.fa-plus.fa-2x
         div.col-xs-1 
           a.settings
-            i.fa.fa-cog.fa-2x
-         
+            i.fa.fa-cog.fa-2x       
     div.tabs
       div.row
-        div.col-xs-2
-          a.links.selected Home
-        div.col-xs-2
-          a.links Calendar
-        div.col-xs-2
+        div.col-xs-3
+          a.links.selected(href="/") Home
+        div.col-xs-3
+          a.links(href="/calendar") Calendar
+        div.col-xs-3
           a.links Alarms
-        div.col-xs-2
-          a.links Maps
-        div.col-xs-2
+        div.col-xs-3
           a.links Training
-        div.col-xs-2
-          a.links other
-  div.newpet
+  div.newpet#newpet
     div.container
       i.fa.fa-plus-square
       span  New Pet
+       
+  //- section.get
+  //-   h3 get data
+  //-   a(href="/get-data") load
+  //-   div
+  //-     for item in items
+  //-       article.item
+  //-         div name: #{item.name}
+  //-         div breed: #{item.breed}
+  //-         div gender: #{item.gender}
+  //-         div dob: #{item.dob}
+  //-         div color: #{item.color}
