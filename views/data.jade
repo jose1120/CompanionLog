@@ -1,5 +1,5 @@
 section.get
-    h3 Data
+    h3 Pet Info
     div
       for item in items
         article.item
@@ -9,4 +9,12 @@ section.get
           div Date of Birth: #{item.dob}
           div Color: #{item.color}
           div
-              
+              a(href="deletebtn/#{item._id}") delete
+    
+    //- h3 Event Info
+    //- div
+    //-   for event0 in event0s
+    //-     article.event0
+    //-       div Title: #{event0.title}
+    //-       div Start Time: #{event0.starttime}
+    //-       div End Time: #{event0.endtime}          
