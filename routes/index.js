@@ -121,4 +121,8 @@ router.get('/createevent', function(req, res, next){
   res.render('createevent', { title: 'Create Event'})
 });
 
+router.get('/emergency', function(req, res, next){
+  res.render('emergency', { title: 'Vets Nearby'})
+});
+
 module.exports = router;

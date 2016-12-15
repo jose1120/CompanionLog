@@ -1,11 +1,24 @@
+@font-face {
+    font-family: lazydog;
+    src: url(/fonts/lazy_dog.ttf);
+}
+
+html
+{
+  background-color: #DEE7EF;
+}
+
 body {
   padding-top: 8em;
   margin-bottom: 0;
+  font-family: lazydog;
 }
 
 .navbar
 {
-  background-color: yellow;
+  background-color:  #000063;
+  color: #ffffff;
+  font-family: lazydog;
   width: 100%;
   border: none !important;
   margin-bottom: 0 !important;
@@ -61,7 +74,7 @@ h1
   margin: 0px 15px;
 }
 
-.col-xs-3
+.col-xs-4
 {
   padding: 0px !important;
 }
@@ -70,8 +83,8 @@ h1
 {
   text-align: center;
   border: 1px solid black;
-  color: purple;
-  background-color: pink;
+  color: #000063;
+  background-color: #CE0000;
   display: block;
   padding: 10px 0 10px 0;
   text-decoration: none;
@@ -79,16 +92,24 @@ h1
 
 .links:hover
 {
-  color: orange;
-  background-color: red;
+  color: #000000;
+  background-color:  #5A79A5;
   text-decoration: none;
 }
 
 .selected
 {
-  color:blue;
-  background-color: orange;
+  color:#CE0000;
+  background-color: #000063;
   font-weight: bold;
+  border: 1px solid #DEE7EF;
+}
+
+.petinfo, .calendar, .createevent, .emergency
+{
+  background-color: #DEE7EF;
+  font-family: lazydog;
+
 }
 
 .newpet
@@ -96,11 +117,25 @@ h1
   border: 1px groove black;
   padding:25px ;
   font-size: 25px;
+  background-color: #9CAAC6;
+  font-family: lazydog;
+}
+
+.newpet:hover, .petprofile:hover
+{
+  background-color: #666;
 }
 
 .petprofile
 {
   border: 1px groove black;
   padding:  25px;
-  font-size: 25px
+  font-size: 25px;
+  background-color: #9CAAC6;
+  font-family: lazydog;
+}
+
+#calendar
+{
+  font-family: lazydog !important;
 }

@@ -7,40 +7,38 @@ block content
         div.col-xs-10  
           h1 Companion Log
         div.col-xs-1
-          a.redcross
+          a.redcross(href="/emergency")
             i.fa.fa-plus.fa-2x
         div.col-xs-1 
           a.settings
             i.fa.fa-cog.fa-2x         
     div.tabs
       div.row
-        div.col-xs-3
+        div.col-xs-4
           a.links(href="/") Home
-        div.col-xs-3
+        div.col-xs-4
           a.links(href="/calendar") Calendar
-        div.col-xs-3
+        div.col-xs-4
           a.links Alarms
-        div.col-xs-3
-          a.links Training
-          
-  div.container.petinfo
-    h3 Pet Info
-    form(action="/insert", method="post")
-      div.input
-        label(for="name") Dog Name: 
-         input(type="text", id="name", name="name", placeholder="ex: Bob")
-      div.input
-        label(for="breed") Dog Breed: 
-         input(type="text", id="breed", name="breed", placeholder="ex: Pomeranian")
-      div.input
-        label(for="gender") Gender: 
-         input(type="text", id="gender", name="gender", placeholder="ex: Male")
-      div.input
-        label(for="dob") Date of Birth: 
-         input(type="text", id="dob", name="dob", placeholder="ex: Jan 01 2016") 
-      div.input
-        label(for="color") Color: 
-         input(type="text", id="color", name="color", placeholder="ex: Brown")
+  div.petinfo
+    div.container
+      h3 Pet Info
+      form(action="/insert", method="post")
+        div.input
+          label(for="name") Dog Name: 
+           input(type="text", id="name", name="name", placeholder="ex: Bob")
+        div.input
+          label(for="breed") Dog Breed: 
+           input(type="text", id="breed", name="breed", placeholder="ex: Pomeranian")
+        div.input
+          label(for="gender") Gender: 
+           input(type="text", id="gender", name="gender", placeholder="ex: Male")
+        div.input
+          label(for="dob") Date of Birth: 
+           input(type="text", id="dob", name="dob", placeholder="ex: Jan 01 2016") 
+        div.input
+          label(for="color") Color: 
+           input(type="text", id="color", name="color", placeholder="ex: Brown")
         label(for="weight") Weight: 
          input(type="number", id="weight", name="weight", placeholder="ex: 50") 
       button#profile(type="submit") Insert

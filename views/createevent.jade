@@ -7,31 +7,30 @@ block content
         div.col-xs-10  
           h1 Companion Log
         div.col-xs-1
-          a.redcross
+          a.redcross(href="/emergency")
             i.fa.fa-plus.fa-2x
         div.col-xs-1 
           a.settings
             i.fa.fa-cog.fa-2x         
     div.tabs
       div.row
-        div.col-xs-3
+        div.col-xs-4
           a.links(href="/") Home
-        div.col-xs-3
+        div.col-xs-4
           a.links.selected(href="/calendar") Calendar
-        div.col-xs-3
+        div.col-xs-4
           a.links Alarms
-        div.col-xs-3
-          a.links Training
-  div.container.petinfo
-    h3 Create New Event
-    form(action="/insert", method="post")
-      div.input
-        label(for="name") Title: 
-         input(type="text", id="name", name="name", placeholder="ex: Vet Appointment")
-      div.input
-        label(for="breed") Start Time: 
-         input(type="text", id="starttime", name="starttime", placeholder="ex: 11:00am")
-      div.input
-        label(for="gender") End Time: 
-         input(type="text", id="endtime", name="endtime", placeholder="ex: 2:00pm")
-      button(type="submit") Insert
+  div.petinfo
+    div.container
+      h3 Create New Event
+      form(action="/insert", method="post")
+        div.input
+          label(for="name") Title: 
+           input(type="text", id="name", name="name", placeholder="ex: Vet Appointment")
+        div.input
+          label(for="breed") Start Time: 
+           input(type="text", id="starttime", name="starttime", placeholder="ex: 11:00am")
+        div.input
+          label(for="gender") End Time: 
+           input(type="text", id="endtime", name="endtime", placeholder="ex: 2:00pm")
+        button(type="submit") Insert
